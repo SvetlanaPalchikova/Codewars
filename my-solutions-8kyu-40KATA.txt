@@ -1,0 +1,456 @@
+8 kyu
+Opposite number
+JavaScript:
+function opposite(number){
+  return -number;
+}
+11 hours agoRefactorDiscuss
+8 kyu
+Grasshopper - Basic Function Fixer
+JavaScript:
+function addFive(num) {
+  var total = num + 5
+  return total
+}
+11 hours agoRefactorDiscuss
+8 kyu
+Expressions Matter
+JavaScript:
+function expressionMatter(a, b, c) {
+  return Math.max(
+    a + b + c,
+    a * b * c,
+    a * (b + c),
+    (a + b) * c,
+    a + b * c,
+    a * b + c,
+  );
+}
+11 hours agoRefactor
+const expressionMatter = (a, b, c) => Math.max(...[a * (b + c), a * b * c, a + b + c, (a + b) * c])
+11 hours agoRefactorDiscuss
+8 kyu
+Function 1 - hello world
+JavaScript:
+function greet() {
+   return 'hello world!';
+}
+
+11 hours agoRefactorDiscuss
+8 kyu
+Grasshopper - Terminal game move function
+JavaScript:
+const move = (position, roll) => position + roll * 2
+11 hours agoRefactorDiscuss
+8 kyu
+Is it a palindrome?
+JavaScript:
+const isPalindrome = str => {
+  // turn the string to lowercase
+  str = str.toLowerCase()
+  // reverse input string and return the result of the
+  // comparisong
+  return str === str.split('').reverse().join('')
+}
+12 hours agoRefactorDiscuss
+8 kyu
+Convert to Binary
+JavaScript:
+const toBinary = n => Number(n.toString(2))
+12 hours agoRefactorDiscuss
+8 kyu
+Convert a string to an array
+JavaScript:
+const stringToArray = string => string.split(' ')
+12 hours agoRefactorDiscuss
+8 kyu
+Beginner Series #2 Clock
+JavaScript:
+function past(h, m, s) {
+  const hourInMs = h * 3600000
+  const minutesInMs = m * 60000
+  const secondsInMS = s * 1000
+  return hourInMs + minutesInMs + secondsInMS
+  }
+12 hours agoRefactorDiscuss
+8 kyu
+Volume of a Cuboid
+JavaScript:
+class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+    return length * width * height;
+  }
+}
+13 hours agoRefactorDiscuss
+8 kyu
+What's the real floor?
+JavaScript:
+function getRealFloor(n) {
+  if (n === 0) return n
+  if (n < 0) return n
+  if (n < 13) return n - 1
+  if (n >= 13) return n - 2
+}
+13 hours agoRefactorDiscuss
+8 kyu
+Can we divide it?
+JavaScript:
+function isDivideBy(number, a, b) {
+  return number % a === 0 && number % b === 0
+}
+yesterdayRefactorDiscuss
+8 kyu
+Grasshopper - Summation
+JavaScript:
+var summation = function (num) {
+  
+  let result = 0;
+
+  for (let i = 1; i <= num ; i++) {
+      result += i
+  }
+
+  return result;
+}
+yesterdayRefactorDiscuss
+7 kyu
+Odd or Even?
+JavaScript:
+function oddOrEven(array) {
+  if (array.length === 0) return 'even'
+
+
+  let sumElements = 0;
+
+  for (let i = 0; i <= array.length - 1; i++) {
+    sumElements += array[i]
+  }
+
+
+  return sumElements % 2 === 0 ? 'even' : 'odd' 
+}
+yesterdayRefactorDiscuss
+8 kyu
+Square(n) Sum
+JavaScript:
+function squareSum(numbers){
+  let result = 0;
+  
+  for (let i = 0; i <= numbers.length - 1; i++) {
+    result += numbers[i] ** 2
+  }
+  
+  return result
+}
+yesterdayRefactorDiscuss
+8 kyu
+Printing Array elements with Comma delimiters
+JavaScript:
+function printArray(array){
+  const result = array.join(',')
+  return result
+
+}
+
+
+
+yesterdayRefactorDiscuss
+8 kyu
+Jenny's secret message
+JavaScript:
+function greet(name){
+  
+  if(name === "Johnny") {
+    return "Hello, my love!";
+  }
+    
+  
+  return "Hello, " + name + "!";
+  
+}
+yesterdayRefactor
+8 kyu
+How many lightsabers do you own?
+JavaScript:
+const howManyLightsabersDoYouOwn = name => name === 'Zach' ? 18 : 0
+yesterdayRefactorDiscuss
+8 kyu
+Calculate BMI
+JavaScript:
+
+function bmi(weight, height) {
+  const bmi = weight / height ** 2
+
+  if (bmi <= 18.5) return 'Underweight'
+  if (bmi <= 25) return 'Normal'
+  if (bmi <= 30) return 'Overweight'
+
+  return 'Obese'
+  }
+4 days agoRefactorDiscuss
+8 kyu
+Barking mad
+JavaScript:
+function Dog (breed) {
+  this.breed = breed;
+}
+
+var snoopy = new Dog("Beagle");
+
+snoopy.bark = function() {
+  return "Woof";
+};
+
+var scoobydoo = new Dog("Great Dane");
+
+function Dog(breed) {
+  this.breed = breed
+}
+Dog.prototype.bark = function() {
+  return 'Woof'
+}
+4 days agoRefactorDiscuss
+8 kyu
+BASIC: Making Six Toast.
+JavaScript:
+const sixToast = number => Math.abs(number - 6)
+4 days agoRefactorDiscuss
+8 kyu
+Area of a Square
+JavaScript:
+
+const squareArea = A => Number(((2 * A / 3.1416)**2).toFixed(2))
+4 days agoRefactorDiscuss
+8 kyu
+Total amount of points
+JavaScript:
+const points = games =>
+  games.reduce((total, result) => {
+    const [x, y] = result.split(':').map(Number)
+    if (x > y) return total + 3
+    if (x < y) return total
+    return total + 1
+  }, 0)
+4 days agoRefactorDiscuss
+8 kyu
+Add new item (collections are passed by reference)
+JavaScript:
+const addExtra = listOfNumbers => [...listOfNumbers, 7]
+4 days agoRefactorDiscuss
+8 kyu
+Abbreviate a Two Word Name
+JavaScript:
+const abbrevName = name =>
+  name
+    .split(' ')
+    .map(name => name[0].toUpperCase())
+    .join('.')
+4 days agoRefactorDiscuss
+8 kyu
+A Strange Trip to the Market
+JavaScript:
+const isLockNessMonster = s =>
+  s.includes('tree fiddy') || s.includes('three fifty') || s.includes('3.50')
+4 days agoRefactorDiscuss
+8 kyu
+Counting sheep...
+JavaScript:
+function countSheeps(arrayOfSheep) {
+  if (!arrayOfSheep) return 0
+  return arrayOfSheep.reduce((a, b) => (b ? ++a : a), 0)
+}
+4 days agoRefactorDiscuss
+8 kyu
+101 Dalmatians - squash the bugs, not the dogs!
+JavaScript:
+const howManyDalmatians = number => {
+  if (number <= 10) return 'Hardly any';
+  if (number <= 50) return 'More than a handful!';
+  if (number === 101) return '101 DALMATIANS!!!';
+  return 'Woah that\'s a lot of dogs!';
+}
+4 days agoRefactorDiscuss
+8 kyu
+Convert a String to a Number!
+JavaScript:
+function stringToNumber(str) {
+ return Number(str);
+}
+
+6 days agoRefactorDiscuss
+8 kyu
+Transportation on vacation
+JavaScript:
+function rentalCarCost(d) {
+  if (d < 3) {
+   return  d * 40
+  }
+  const allDays = d * 40;
+  let discount;
+  if ((d < 7) && (d >= 3)) {
+    discount = 20
+  }
+  if (d >= 7) {
+    discount = 50
+  }
+  const result = allDays - discount
+  return result
+}
+6 days agoRefactorDiscuss
+8 kyu
+Correct the mistakes of the character recognition software
+JavaScript:
+const correct = (string) => {
+  const arrSym = string.split('')
+  const checkValue = arrSym.map(symbol => {
+    switch (symbol) {
+      case '0':
+        return 'O'
+      case '5':
+        return 'S'
+      case '1':
+        return 'I'
+      default:
+        return symbol
+    }
+  })
+
+  const result = checkValue.join('')
+  return result
+}
+6 days agoRefactorDiscuss
+8 kyu
+Switch it Up!
+JavaScript:
+function switchItUp(n){
+   if (n === 0) return "Zero"
+  if (n === 1) return "One"
+  if (n === 2) return "Two"
+  if (n === 3) return "Three"
+  if (n === 4) return "Four"
+  if (n === 5) return "Five"
+  if (n === 6) return "Six"
+  if (n === 7) return "Seven"
+  if (n === 8) return "Eight"
+  if (n === 9) return "Nine"
+
+//Write your own Code!
+}
+6 days agoRefactorDiscuss
+8 kyu
+Drink about
+JavaScript:
+function peopleWithAgeDrink(old) {
+  if (old <14) {
+    return "drink toddy";
+}
+   if (old >= 14, old < 18) {
+    return "drink coke";
+}
+  if (old >= 18, old < 21 ) {
+    return "drink beer";
+}
+  if (old >= 21) {
+    return "drink whisky";
+}
+  };
+
+  
+6 days agoRefactorDiscuss
+8 kyu
+Function 3 - multiplying two numbers
+JavaScript:
+function multiply(a,b) {
+  return a*b;
+}// Write here your multiply-function
+8 days agoRefactorDiscuss
+8 kyu
+Convert a Number to a String!
+JavaScript:
+function numberToString(num) {
+  return String(num)// Return a string of the number here!
+}
+8 days agoRefactorDiscuss
+8 kyu
+Simple multiplication
+JavaScript:
+const simpleMultiplication = number => number * (number % 2 === 0 ? 8 : 9)
+
+10 days agoRefactorDiscuss
+8 kyu
+Beginner Series #4 Cockroach
+JavaScript:
+const cockroachSpeed = s => Math.floor(s * (100000 / 3600))//Good Luck!
+10 days agoRefactorDiscuss
+8 kyu
+Return Negative
+JavaScript:
+function makeNegative(num){
+  return num < 0 ? num : -num
+  
+//   return Math.sign(num) === 1? -num : num
+}
+10 days agoRefactorDiscuss
+8 kyu
+Even or Odd
+JavaScript:
+function even_or_odd(number) {
+  return number % 2 === 0 ? 'Even' : 'Odd'
+  }
+  
+  even_or_odd(2);
+even_or_odd(7);
+even_or_odd(-42);
+even_or_odd(-7);
+even_or_odd(0);
+11 days agoRefactorDiscuss
+8 kyu
+Training JS #2: Basic data types--Number
+JavaScript:
+var v1=50;v2=100,v3=150,v4=200,v5=2,v6=250
+function equal1(){
+  var a=v1   
+  var b=v1   
+  return a+b;
+}
+//Please refer to the example above to complete the following functions
+function equal2(){
+  var a=v4   //set number value to a
+  var b=v2  //set number value to b
+  return a-b;
+}
+function equal3(){
+  var a=v1   //set number value to a
+  var b=v5   //set number value to b
+  return a*b;
+}
+function equal4(){
+  var a=v4   //set number value to a
+  var b=v5   //set number value to b
+  return a/b;
+}
+function equal5(){
+  var a=v6   //set number value to a
+  var b=v3  //set number value to b
+  return a%b;
+}
+11 days agoRefactorDiscuss
+8 kyu
+Add Length
+JavaScript:
+
+function addLength(str) {
+  const arrayFromString = str.split(' ')
+  const result = arrayFromString.map(word => {
+      return `${word} ${word.length}`
+  })
+  return result  
+}
+13 days agoRefactorDiscuss
+8 kyu
+Multiply
+JavaScript:
+function multiply(a, b){
+ return a * b
+}
+last monthRefactor
