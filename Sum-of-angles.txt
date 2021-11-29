@@ -1,0 +1,10 @@
+Sum of angles
+
+Find the total sum of internal angles (in degrees) in an n-sided simple polygon. N will be greater than 2.
+
+solution:
+
+function arrowArea(a,b) {
+  if (a > 0, a%2===0, b > 0 % 2 === 0);
+  return  1/2*a*1/2*b;
+}
